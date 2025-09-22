@@ -1,0 +1,72 @@
+/* Page background and text color */
+body {
+  background-color: #f4f4f9;  /* light gray/soft background */
+  color: #333333;             /* dark gray text for readability */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 20px; /* outer padding to keep content away from screen edges */
+}
+
+/* Container with padding so text is not against the screen edges */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;  /* white box on top of gray background */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1{
+  margin-top:0;
+  color:#2b7a78;
+}
+
+.article-paragraph{
+  text-align: justify;
+}
+
+/* Floating images */
+.float-left {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  width: 200px;   /* control size */
+  height: auto;
+  border-radius:6px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 12px;
+  width: 200px;   /* control size */
+  height: auto;
+  border-radius:6px;
+}
+
+/* Clear floats after the article */
+.article-paragraph::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Responsive adjustments */
+@media (max-width:700px){
+  .float-left, .float-right{
+    float:none;
+    display:block;
+    margin:0 auto 1rem auto;
+    width:70%;
+    max-width:280px;
+  }
+}
+
+footer{
+  margin-top:1.5rem;
+  font-size:0.9rem;
+  color: #47525a;
+}
