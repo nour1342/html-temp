@@ -1,0 +1,67 @@
+/* Base page styles *//* Base page styles */
+
+/* Base page styles */
+:root{
+  --bg: #f0f6ff;
+  --card: #ffffff;
+  --text: #111827;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: 0; /* remove default browser margin */
+  background-color: var(--bg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* container ensures content never touches the page edges */
+.container{
+  width: 100%;
+  max-width: 800px;
+  padding: 48px; /* keeps content away from edges */
+  box-sizing: border-box;
+}
+
+.list-wrapper{
+  background: var(--card);
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(10,20,40,0.08);
+}
+
+.produce-list{
+  margin: 0;
+  padding-left: 1.2rem; /* keeps numbering inside the card */
+}
+
+.produce-list > li{
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.produce-list li ul{
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+  font-weight: 400;
+}
+
+.visually-hidden{
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media (max-width: 480px){
+  .container{ padding: 20px }
+  .list-wrapper{ padding: 20px }
+}
+
+
