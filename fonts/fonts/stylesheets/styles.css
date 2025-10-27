@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5f9;
+    color: #1e2022;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+nav {
+    background-color: #c9d6df;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e2022;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #52616b;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+/* Paragraph styles with different Google Fonts */
+.font1 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5em;
+}
+
+.font2 {
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1.5em;
+}
+
+.font3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1.5em;
+}
+
+.font4 {
+    font-family: 'Lora', serif;
+    margin-bottom: 1.5em;
+}
