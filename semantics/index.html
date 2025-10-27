@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Semantics — Demo Page</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header>
+      <h1>Nour Tahayneh</h1>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <a href="https://www.harvard.edu" target="_blank" rel="noopener">Harvard</a>
+      <a href="https://www.mit.edu" target="_blank" rel="noopener">MIT</a>
+      <a href="https://www.bu.edu" target="_blank" rel="noopener">Boston University</a>
+      <a href="https://www.northeastern.edu" target="_blank" rel="noopener">Northeastern</a>
+    </nav>
+
+  <main id="main">
+      <section>
+        <h2>About semantic HTML</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non urna ac sapien aliquet fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ac velit id arcu convallis luctus.</p>
+      </section>
+
+      <article>
+        <h2>Article</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel mauris sit amet ipsum venenatis feugiat. Cras vitae magna sit amet arcu tincidunt euismod. Sed sit amet arcu ac purus faucibus fringilla.</p>
+      </article>
+
+      <aside>
+        <h2>Related image</h2>
+        <img src="image/appropriate-image.jpg" alt="Boston campus scene" />
+      </aside>
+    </main>
+
+    <footer>
+      <p>© <span id="year">2025</span> Nour Tahayneh</p>
+    </footer>
+
+    <script>
+      // Insert current year into footer
+      (function(){
+        var y = new Date().getFullYear();
+        var el = document.getElementById('year');
+        if(el) el.textContent = y;
+      })();
+    </script>
+  </body>
+</html>
